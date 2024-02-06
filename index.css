@@ -1,0 +1,238 @@
+
+
+
+/* ========== Index Container ========== */
+
+.index-container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+/* ========== Sidebar ========== */
+
+.sidebar {
+    width: 15%;
+    border-right: solid 1px #ddd;
+    height: 100%;
+}
+.sidebar-content {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-top {
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+.sidebar-logo {
+    font-size: var(--font-xl) !important;
+    font-family: 'Courgette', cursive;
+    color: #000;
+}
+
+.sidebar-mid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sidebar-item-box {
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    margin-bottom: 25px;
+    align-items: center;
+    gap: 1em;
+}
+.sidebar-item-box i {
+    font-size: var(--font-nm);
+    transition: .15s ease;
+}
+.sidebar-item-box:hover i {
+    transform: scale(1.2);
+}
+
+.sidebar-bottom {
+    width: 100%;
+}
+
+.sidebar-logout-btn {
+    color: red;
+}
+
+
+
+
+
+/* ========== Main Posts Container ========== */
+
+.main-posts-container {
+    width: 55%;
+    border-right: solid 1px #dddddd;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-posts-content {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+
+
+/* ========== Users Post Block Container ========== */
+
+.user-post-block {
+    position: relative;
+    padding: 10px;
+    border-bottom: solid 1px #dddddd;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.user-post-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+.user-post-av {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+.user-post-name {
+    display: flex;
+    flex-direction: column;
+}
+.user-post-name .post-author {
+    font-weight: 500;
+}
+.user-post-name .post-timestamp {
+    font-size: 11px;
+    opacity: 60%;
+}
+.user-post-media {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 550px;
+    height: 100%;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.user-post-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 10px 0;
+}
+.upa-left {
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.upa-box {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    transition: .3s ease;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.upa-box * {
+    font-size: 15px;
+}
+.upa-likes:hover {
+    color: #fff;
+    background: rgb(214, 123, 123);
+}
+.upa-comments:hover {
+    color: #fff;
+    background: rgb(123, 147, 214);
+}
+.upa-shares:hover {
+    color: #fff;
+    background: rgb(91, 148, 96);
+}
+.upa-bookmark:hover {
+    color: #fff;
+    background: rgb(138, 101, 172);
+}
+.heart-red {
+    color: red;
+}
+.author-mention {
+    font-size: var(--font-sm);
+    font-weight: 700;
+}
+.description-contnet {
+    font-size: var(--font-sm);
+    opacity: 80%;
+    color: #333;
+}
+
+
+/* ========== Status Bar Container ========== */
+
+.statusbar-container {
+    width: 30%;
+    height: 100%;
+}
+
+.statusbar-content {
+    padding: 20px;
+}
+.users-status {
+    padding: 20px;
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 20px;
+}
+.users-status h2 {
+    font-size: var(--font-nm);
+    padding-bottom: 10px;
+}
+.users-status p * {
+    font-size: var(--font-sm);
+}
+.usersOnline {
+    color: #ff0000;
+}
+.streamsCount {
+    color: #4169e1;
+}
+.user-status-contnet {
+    align-items: center;
+    gap: 1.5em;
+    display: flex;
+}
+
+.tags-status-container {
+    border-bottom: solid 1px #ddd;
+    padding: 20px;
+}
+.tags-cup-content {
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.tags-status-container h2 {
+    font-size: var(--font-nm);
+    padding-bottom: 10px;
+}
+.tag-cup {
+    padding: 8px 15px;
+    background: #ddd;
+    border-radius: 30px;
+}
